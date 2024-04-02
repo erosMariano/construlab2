@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .flex {
   display: flex;
+}
+
+.mobile {
+  display: none !important;
 }
 
 .container {
@@ -110,6 +118,11 @@ header a {
 .a_construlab .image {
   position: relative;
   left: -104px;
+  max-width: 645.43px;
+  width: 100%;
+}
+.a_construlab .image img {
+  width: 100%;
 }
 .a_construlab .container {
   display: flex;
@@ -127,6 +140,9 @@ header a {
   margin: 40px 0;
   font-size: 2rem;
   color: #333333;
+}
+.a_construlab div {
+  width: 100%;
 }
 
 .area_atuacao {
@@ -163,7 +179,7 @@ header a {
 }
 .area_atuacao .card {
   padding: 20px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin-bottom: 2.25rem;
   max-width: 579.61px;
   width: 100%;
@@ -284,7 +300,7 @@ header a {
   width: 480px;
 }
 .quem_faz_construlab .image span {
-  background-color: #B06A36;
+  background-color: #b06a36;
   display: block;
   font-size: 2rem;
   color: #fff;
@@ -404,7 +420,7 @@ header a {
   font-size: 1.5rem;
 }
 .fale_conosco form textarea {
-  border-color: #DDDDDD;
+  border-color: #dddddd;
   resize: none;
   margin-top: 10px;
   border-radius: 4px;
@@ -412,7 +428,7 @@ header a {
 .fale_conosco form input {
   font-size: 1.5rem;
   border: 0;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #dddddd;
   margin-bottom: 40px;
   height: 43px;
 }
@@ -473,4 +489,283 @@ header a {
 }
 .footer .copy span:nth-child(2) {
   font-style: italic;
+}
+
+@media (max-width: 1447px) {
+  .a_construlab .image {
+    left: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex !important;
+  }
+  header {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  header .active_menu {
+    background: none;
+    border: none;
+  }
+  header .mobile {
+    justify-content: end;
+  }
+  header button {
+    cursor: pointer;
+  }
+  header nav {
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    left: 100%;
+  }
+  .hero h1 {
+    max-width: 100%;
+  }
+  .hero .container {
+    flex-direction: column;
+  }
+  .hero .button-primary {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .a_construlab {
+    border-radius: 0px 0px 20px 20px;
+  }
+  .a_construlab .container {
+    flex-direction: column-reverse;
+  }
+  .a_construlab .image {
+    margin-top: 40px;
+  }
+  .a_construlab .image a {
+    margin-top: 40px;
+  }
+  .a_construlab .image a img {
+    width: auto;
+  }
+  .area_atuacao .card {
+    max-width: 100%;
+  }
+  .area_atuacao .texts h3,
+  .area_atuacao .texts p {
+    width: 100%;
+    max-width: 100%;
+  }
+  .area_atuacao .container > div {
+    flex-direction: column;
+  }
+  .ods {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ods .imgs_ods {
+    margin-top: 20px;
+  }
+  .ods img {
+    width: 22%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .ods h2 {
+    max-width: 100%;
+  }
+  .ods .container {
+    flex-direction: column;
+  }
+  .principais_servicos .servicos {
+    flex-direction: column;
+  }
+  .principais_servicos .tag {
+    width: 180px;
+  }
+  .principais_servicos .item {
+    width: 100%;
+  }
+  .principais_servicos .item > img {
+    height: 180px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .principais_servicos .item_two {
+    width: 100%;
+    margin: 20px 0;
+    height: 180px;
+  }
+  .quem_faz_construlab .people {
+    flex-direction: column;
+  }
+  .quem_faz_construlab .people + .people {
+    flex-direction: column-reverse;
+  }
+  .projeto_piloto .container_piloto {
+    padding: 40px;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 0;
+    border-radius: 20px;
+  }
+  .projeto_piloto .item {
+    width: 100%;
+  }
+  .projeto_piloto .image {
+    width: 100%;
+    top: 6px;
+  }
+  .projeto_piloto .image img {
+    width: 100%;
+  }
+  .fale_conosco {
+    border-radius: 20px 20px 0 0;
+  }
+  .fale_conosco .container {
+    flex-direction: column;
+  }
+  .fale_conosco form {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer .links_footer {
+    text-align: center;
+    flex-direction: column;
+  }
+  .footer .links_footer nav {
+    margin: 0;
+    margin-top: 40px;
+  }
+  .footer .links_footer nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .container {
+    flex-direction: column;
+  }
+  .footer .copy {
+    margin: 40px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 2rem !important;
+  }
+  .button-primary {
+    font-size: 1rem;
+    width: 100%;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  .hero {
+    padding-bottom: 40px;
+  }
+  .hero p {
+    width: 100%;
+  }
+  .a_construlab {
+    padding-top: 40px;
+  }
+  .a_construlab p {
+    margin: 20px 0;
+  }
+  .area_atuacao {
+    padding: 80px 0;
+  }
+  .area_atuacao .card h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: -6px;
+  }
+  .area_atuacao .card img {
+    width: 20px;
+    height: 20px;
+  }
+  .area_atuacao .texts h3 {
+    font-size: 2rem;
+  }
+  .area_atuacao .texts p {
+    padding: 20px 0;
+  }
+  .ods h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .ods .imgs_ods {
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .ods img {
+    width: 20%;
+  }
+  .quem_faz_construlab {
+    padding-top: 0px;
+  }
+  .quem_faz_construlab .people + .people {
+    margin-top: 40px;
+  }
+  .quem_faz_construlab h2 {
+    margin-bottom: 20px;
+  }
+  .quem_faz_construlab .texts {
+    gap: 20px;
+  }
+  .quem_faz_construlab .texts p img {
+    width: 20px;
+    height: 20px;
+  }
+  .quem_faz_construlab .image {
+    width: 100%;
+  }
+  .quem_faz_construlab .image span {
+    padding: 0px;
+    font-size: 1.5rem;
+    margin-top: -71px;
+    height: 66px;
+  }
+  .quem_faz_construlab .image img {
+    width: 100%;
+  }
+  .projeto_piloto {
+    padding: 0 0 80px 0;
+  }
+  .projeto_piloto .item h3 {
+    font-size: 2rem;
+  }
+  .fale_conosco p {
+    margin: 20px 0;
+  }
+  .fale_conosco form > div span {
+    font-size: 1rem;
+  }
+  .fale_conosco form {
+    padding: 20px;
+  }
+  .fale_conosco form input,
+  .fale_conosco form textarea,
+  .fale_conosco form span {
+    font-size: 1rem;
+  }
+  .fale_conosco input[type=submit] {
+    width: 124px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+  .fale_conosco a {
+    font-size: 1rem;
+  }
+  .fale_conosco a img {
+    width: 24px;
+    height: 24px;
+  }
 }/*# sourceMappingURL=styles.css.map */

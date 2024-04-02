@@ -6,15 +6,21 @@ $text-secondary-color: #333333;
   padding: 0;
   box-sizing: border-box;
 }
-.flex{
+body {
+  overflow-x: hidden;
+}
+.flex {
   display: flex;
+}
+.mobile {
+  display: none !important;
 }
 .container {
   max-width: 1286px;
   padding: 0 16px;
   margin: 0 auto;
 }
-.button-primary{
+.button-primary {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,12 +43,11 @@ main {
 header {
   padding: 24px 0;
   background-color: $main-yellow;
-  nav{
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .fale_conosco_button{
-      
+    .fale_conosco_button {
       display: flex;
       gap: 12px;
       color: #333333;
@@ -66,14 +71,13 @@ header {
   }
 }
 
-.hero{
-
-  .container{
+.hero {
+  .container {
     display: flex;
     align-items: center;
     padding-top: 1.8125rem;
   }
-  h1{
+  h1 {
     max-width: 600px;
     width: 100%;
     font-family: "Nunito", sans-serif;
@@ -83,7 +87,7 @@ header {
     margin-bottom: 1.5rem;
   }
 
-  p{
+  p {
     font-family: "Nunito", sans-serif;
     font-weight: 500;
     color: $text-secondary-color;
@@ -93,87 +97,97 @@ header {
     max-width: 100%;
   }
 
-  .image_hero{
-    img{
+  .image_hero {
+    img {
       max-width: 650px;
       width: 100%;
     }
   }
 }
 
-.a_construlab{
+.a_construlab {
   background-color: $main-yellow;
   border-radius: 0px 0px 60px 60px;
   padding: 80px 0;
   position: relative;
   overflow: hidden;
-  .layer{
+  .layer {
     width: 100%;
-    background-color: rgba(255, 229, 166, .6);
+    background-color: rgba(255, 229, 166, 0.6);
     height: 100px;
     position: absolute;
     top: 0;
   }
-  .image{
+  .image {
     position: relative;
     left: -104px;
+    max-width: 645.43px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
-  .container{
+  .container {
     display: flex;
     justify-content: space-between;
   }
 
-  h2{
+  h2 {
     font-family: "Nunito";
     font-size: 3.75rem;
     font-weight: 800;
     color: $text-color;
   }
-  p{
+  p {
     font-family: "Nunito";
     font-weight: 500;
     margin: 40px 0;
     font-size: 2rem;
     color: $text-secondary-color;
   }
+
+  div {
+    width: 100%;
+  }
 }
 
-.area_atuacao{
+.area_atuacao {
   font-family: "Nunito";
   padding: 100px 0;
   color: $text-color;
-  .container > div{
+  .container > div {
     display: flex;
     justify-content: space-between;
   }
-  h2{
+  h2 {
     font-size: 3.75rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 80px;
   }
-  .texts h3{
+  .texts h3 {
     font-size: 3.25rem;
     max-width: 393px;
     width: 100%;
   }
-  .texts p{
+  .texts p {
     font-size: 2rem;
     padding: 40px 0;
     max-width: 479px;
     width: 100%;
   }
 
-  .card:nth-child(1){
+  .card:nth-child(1) {
     border-radius: 20px 0 0 0;
   }
 
-  .card:nth-child(3){
-    border-radius:  0 0 20px 0;
+  .card:nth-child(3) {
+    border-radius: 0 0 20px 0;
   }
-  .card{
+  .card {
     padding: 20px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     margin-bottom: 2.25rem;
     max-width: 579.61px;
     width: 100%;
@@ -181,25 +195,25 @@ header {
     display: flex;
     gap: 8px;
     border-radius: 4px;
-    h4{
+    h4 {
       font-size: 2rem;
       font-weight: 500;
       margin-bottom: 16px;
     }
-    p{
+    p {
       font-size: 16px;
     }
   }
 }
 
-.ods{
-  background-color: rgba(176, 106, 54, .15);
+.ods {
+  background-color: rgba(176, 106, 54, 0.15);
   padding: 2.9688rem;
-  .container{
+  .container {
     display: flex;
     justify-content: space-between;
   }
-  h2{
+  h2 {
     font-family: "Nunito", sans-serif;
     font-size: 2.5rem;
     color: $text-color;
@@ -207,38 +221,38 @@ header {
     width: 100%;
   }
 
-  .imgs_ods{
+  .imgs_ods {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
   }
 }
-.principais_servicos{
+.principais_servicos {
   padding: 80px 0;
   font-family: "Nunito", sans-serif;
-  
-  .button-primary{
+
+  .button-primary {
     margin: 0 auto;
     margin-top: 40px;
   }
-  h2{
+  h2 {
     font-size: 3.75rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 2.5rem;
   }
 
-  .servicos{
+  .servicos {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
   }
 
-  .item{
+  .item {
     position: relative;
   }
 
-  .tag{
+  .tag {
     position: absolute;
     bottom: 16px;
     background-color: #fff;
@@ -252,16 +266,16 @@ header {
     gap: 12px;
     padding: 4px;
 
-    p{
+    p {
       font-weight: 600;
       color: $text-secondary-color;
     }
   }
 
-  .item_two{
+  .item_two {
     width: 240px;
     height: 240px;
-    background-color: rgba(176, 106, 54, .15);
+    background-color: rgba(176, 106, 54, 0.15);
     border-radius: 40px;
     padding: 12px;
 
@@ -271,41 +285,41 @@ header {
     flex-direction: column;
     text-align: center;
 
-    h3{
+    h3 {
       font-size: 2rem;
       padding: 8px 0;
     }
 
-    p{
+    p {
       font-size: 1rem;
       font-weight: 500;
     }
   }
 }
 
-.quem_faz_construlab{
+.quem_faz_construlab {
   padding: 80px 0;
   font-family: "Nunito", sans-serif;
-  h2{
+  h2 {
     font-size: 3.75rem;
     text-align: center;
     font-weight: 600;
     margin-bottom: 8.125rem;
   }
 
-  .people{
+  .people {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 
-    &+.people{
+    & + .people {
       margin-top: 130px;
     }
   }
-  .image{
+  .image {
     width: 480px;
-    span{
-      background-color: #B06A36;
+    span {
+      background-color: #b06a36;
       display: block;
       font-size: 2rem;
       color: #fff;
@@ -322,11 +336,11 @@ header {
       justify-content: center;
     }
   }
-  .texts{
+  .texts {
     display: flex;
     flex-direction: column;
     gap: 48px;
-    p{
+    p {
       color: $text-secondary-color;
       display: flex;
       gap: 24px;
@@ -337,21 +351,21 @@ header {
   }
 }
 
-.projeto_piloto{
+.projeto_piloto {
   padding: 120px 0;
   font-family: "Nunito", sans-serif;
-  h2{
+  h2 {
     color: $text-color;
     font-size: 3.75rem;
     text-align: center;
     margin-bottom: 32px;
   }
 
-  .container_piloto{
+  .container_piloto {
     height: 660px;
     display: flex;
     align-items: center;
-    background-color: rgba(255, 229, 166, .3);
+    background-color: rgba(255, 229, 166, 0.3);
     padding-left: 60px;
     position: relative;
     justify-content: space-between;
@@ -359,67 +373,67 @@ header {
     border-radius: 40px;
   }
 
-  .image{
+  .image {
     position: relative;
     top: 91px;
   }
 
-  .item{
+  .item {
     width: 360px;
-    &+.item{
+    & + .item {
       margin-top: 28px;
     }
-    p{
+    p {
       padding: 20px 0;
       font-weight: 500;
     }
   }
-  .item h3{
+  .item h3 {
     font-size: 2.5rem;
     border-bottom: 1px solid $text-color;
   }
 
-  .button-primary{
+  .button-primary {
     margin: 40px auto 0 auto;
   }
 }
 
 .fale_conosco {
   font-family: "Nunito", sans-serif;
-  background-color: rgba(255, 229, 166, .3);
+  background-color: rgba(255, 229, 166, 0.3);
   border-radius: 60px 60px 0px 0;
   padding: 50px 0;
 
-  .container{
+  .container {
     display: flex;
     justify-content: space-between;
   }
-  h2{
+  h2 {
     font-size: 2.5rem;
     font-weight: 600;
   }
 
-  p{
+  p {
     font-size: 1.5rem;
     width: 100%;
     max-width: 472px;
     margin: 40px 0;
   }
 
-  a{
+  a {
     font-size: 1.5rem;
     color: $text-color;
-    
+
     display: flex;
     gap: 16px;
     text-decoration: none;
     font-weight: 500;
-    &+a{
+    & + a {
       margin-top: 24px;
     }
   }
 
-  form{
+  form {
     border-radius: 16px;
     background-color: #fff;
     padding: 60px 40px 24px 40px;
@@ -429,34 +443,34 @@ header {
     max-width: 504px;
     width: 100%;
 
-    >div{
+    > div {
       display: flex;
       flex-direction: column;
 
-      span{
+      span {
         color: #3c3c3c;
         font-size: 1.5rem;
       }
     }
-    textarea{
-      border-color: #DDDDDD;
+    textarea {
+      border-color: #dddddd;
       resize: none;
       margin-top: 10px;
       border-radius: 4px;
     }
-    input{
+    input {
       font-size: 1.5rem;
       border: 0;
-      border-bottom: 1px solid #DDDDDD;
+      border-bottom: 1px solid #dddddd;
       margin-bottom: 40px;
       height: 43px;
     }
 
-    input::placeholder{
+    input::placeholder {
       color: #3c3c3c;
     }
   }
-  input[type="submit"]{
+  input[type="submit"] {
     width: 142px;
     height: 48px;
     border: 2px solid #333333;
@@ -466,50 +480,359 @@ header {
   }
 }
 
-.footer{
+.footer {
   padding: 60px 0;
-  background-color: rgba(255, 229, 166, .3);
+  background-color: rgba(255, 229, 166, 0.3);
   font-family: "Nunito", sans-serif;
 
-  .container{
+  .container {
     display: flex;
     justify-content: space-between;
   }
-  ul li{
+  ul li {
     list-style: none;
   }
-  .links_footer{
+  .links_footer {
     display: flex;
   }
-  .links_footer nav{
+  .links_footer nav {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
     gap: 20px;
-    ul{
+    ul {
       display: flex;
       gap: 20px;
     }
   }
-  .links_footer a{
+  .links_footer a {
     font-size: 1.5rem;
     color: $text-color;
     text-decoration: none;
     font-weight: 500;
   }
 
-  .copy{
+  .copy {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 20px;
     font-weight: 500;
 
-    span{
+    span {
       font-size: 1.5rem;
     }
 
-    span:nth-child(2){
+    span:nth-child(2) {
       font-style: italic;
+    }
+  }
+}
+
+// MOBILE
+
+@media (max-width: 1447px) {
+  .a_construlab .image {
+    left: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex !important;
+  }
+  header {
+    position: relative;
+    overflow: hidden;
+    .active_menu {
+      background: none;
+      border: none;
+    }
+    padding: 20px;
+    .mobile {
+      justify-content: end;
+    }
+    button {
+      cursor: pointer;
+    }
+    nav {
+      background-color: red;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      height: 100vh;
+      left: 100%;
+    }
+  }
+  .hero {
+    h1 {
+      max-width: 100%;
+    }
+    .container {
+      flex-direction: column;
+    }
+    .button-primary {
+      width: 100%;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+  .a_construlab {
+    border-radius: 0px 0px 20px 20px;
+    .container {
+      flex-direction: column-reverse;
+    }
+
+    .image {
+      a{
+        margin-top: 40px;
+      }
+      a img{
+        width: auto;
+      }
+      margin-top: 40px;
+    }
+  }
+
+  .area_atuacao {
+    .card {
+      max-width: 100%;
+    }
+    .texts h3,
+    .texts p {
+      width: 100%;
+      max-width: 100%;
+    }
+    .container > div {
+      flex-direction: column;
+    }
+  }
+  .ods {
+    padding-left: 0;
+    padding-right: 0;
+    .imgs_ods {
+      margin-top: 20px;
+    }
+    img {
+      width: 22%;
+      height: fit-content;
+    }
+    h2 {
+      max-width: 100%;
+    }
+    .container {
+      flex-direction: column;
+    }
+  }
+  .principais_servicos {
+    .servicos {
+      flex-direction: column;
+    }
+    .tag {
+      width: 180px;
+    }
+    .item {
+      width: 100%;
+      > img {
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .item_two {
+      width: 100%;
+      margin: 20px 0;
+      height: 180px;
+    }
+  }
+  .quem_faz_construlab {
+    .people {
+      flex-direction: column;
+    }
+    .people + .people {
+      flex-direction: column-reverse;
+    }
+  }
+  .projeto_piloto {
+    .container_piloto {
+      padding: 40px;
+      flex-direction: column;
+      height: auto;
+      padding-bottom: 0;
+      border-radius: 20px;
+    }
+    .item {
+      width: 100%;
+    }
+    .image {
+      width: 100%;
+      top: 6px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .fale_conosco {
+    border-radius: 20px 20px 0 0;
+    .container {
+      flex-direction: column;
+    }
+    form {
+      margin-top: 40px;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .footer {
+    .links_footer {
+      text-align: center;
+      flex-direction: column;
+      nav {
+        margin: 0;
+        margin-top: 40px;
+      }
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .container {
+      flex-direction: column;
+    }
+    .copy {
+      margin: 40px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 2rem !important;
+  }
+  .button-primary {
+    font-size: 1rem;
+    width: 100%;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  .hero {
+    padding-bottom: 40px;
+    p {
+      width: 100%;
+    }
+  }
+
+ .a_construlab {
+    padding-top: 40px;
+    p {
+      margin: 20px 0;
+    }
+  }
+
+  .area_atuacao {
+    padding: 80px 0;
+
+    .card {
+      h4 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: -6px;
+      }
+    }
+    .card img {
+      width: 20px;
+      height: 20px;
+    }
+    .texts h3 {
+      font-size: 2rem;
+    }
+    .texts p {
+      padding: 20px 0;
+    }
+  }
+
+  .ods {
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+    .imgs_ods {
+      justify-content: space-between;
+      gap: 20px;
+    }
+    img {
+      width: 20%;
+    }
+  }
+
+  .quem_faz_construlab {
+    padding-top: 0px;
+
+    .people + .people {
+      margin-top: 40px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .texts {
+      gap: 20px;
+    }
+    .texts p img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .image {
+      width: 100%;
+      span {
+        padding: 0px;
+        font-size: 1.5rem;
+        margin-top: -71px;
+        height: 66px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .projeto_piloto {
+    padding: 0 0 80px 0;
+    .item h3 {
+      font-size: 2rem;
+    }
+  }
+  .fale_conosco p {
+    margin: 20px 0;
+  }
+  .fale_conosco form > div span {
+    font-size: 1rem;
+  }
+  .fale_conosco {
+    form {
+      padding: 20px;
+      input,
+      textarea,
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+  .fale_conosco input[type="submit"] {
+    width: 124px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+  .fale_conosco a {
+    font-size: 1rem;
+    img {
+      width: 24px;
+      height: 24px;
     }
   }
 }
