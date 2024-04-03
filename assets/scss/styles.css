@@ -504,7 +504,6 @@ header a {
     display: flex !important;
   }
   header {
-    position: relative;
     overflow: hidden;
     padding: 20px;
   }
@@ -519,12 +518,28 @@ header a {
     cursor: pointer;
   }
   header nav {
-    background-color: red;
-    position: absolute;
+    background-color: #fff;
+    position: fixed;
     width: 100%;
     top: 0;
     height: 100vh;
     left: 100%;
+    z-index: 100;
+    transition: 0.3s;
+  }
+  header nav.nav_mobile.active {
+    left: 0%;
+  }
+  header nav img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  header ul {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .hero h1 {
     max-width: 100%;
@@ -581,6 +596,10 @@ header a {
   .ods .container {
     flex-direction: column;
   }
+  .servicos picture img {
+    width: 100%;
+    border-radius: 20px;
+  }
   .principais_servicos .servicos {
     flex-direction: column;
   }
@@ -595,6 +614,7 @@ header a {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 20px;
   }
   .principais_servicos .item_two {
     width: 100%;
@@ -653,6 +673,11 @@ header a {
   .footer .copy {
     margin: 40px;
     text-align: center;
+  }
+  .servicos picture img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 768px) {
@@ -767,5 +792,8 @@ header a {
   .fale_conosco a img {
     width: 24px;
     height: 24px;
+  }
+  .servicos picture img {
+    height: 180px;
   }
 }/*# sourceMappingURL=styles.css.map */

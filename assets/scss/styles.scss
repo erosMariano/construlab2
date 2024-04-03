@@ -544,7 +544,6 @@ header {
     display: flex !important;
   }
   header {
-    position: relative;
     overflow: hidden;
     .active_menu {
       background: none;
@@ -558,12 +557,30 @@ header {
       cursor: pointer;
     }
     nav {
-      background-color: red;
-      position: absolute;
+      background-color: #fff;
+      position: fixed;
       width: 100%;
       top: 0;
       height: 100vh;
       left: 100%;
+      z-index: 100;
+      transition: .3s;
+    }
+
+    nav.nav_mobile.active{
+      left: 0%;
+    }
+
+    nav img{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    ul{
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
     }
   }
   .hero {
@@ -626,6 +643,10 @@ header {
       flex-direction: column;
     }
   }
+  .servicos picture img{
+    width: 100%;
+    border-radius: 20px;
+  }
   .principais_servicos {
     .servicos {
       flex-direction: column;
@@ -639,6 +660,7 @@ header {
         height: 180px;
         width: 100%;
         object-fit: cover;
+        border-radius: 20px;
       }
     }
     .item_two {
@@ -705,6 +727,10 @@ header {
       margin: 40px;
       text-align: center;
     }
+  }
+  .servicos picture img {
+    height: 300px;
+    object-fit: cover;
   }
 }
 
@@ -834,5 +860,8 @@ header {
       width: 24px;
       height: 24px;
     }
+  }
+  .servicos picture img {
+    height: 180px;
   }
 }
