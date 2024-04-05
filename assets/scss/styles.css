@@ -12,7 +12,8 @@ html {
   scroll-behavior: smooth;
 }
 
-main, section {
+main,
+section {
   overflow-x: hidden;
 }
 
@@ -67,6 +68,17 @@ header nav .fale_conosco_button {
   font-family: "Poppins";
   font-weight: 500;
   padding: 12px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+header nav .fale_conosco_button:hover {
+  background-color: #FFC63E;
+}
+header .desktop ul a {
+  transition: 0.2s;
+}
+header .desktop ul a:hover {
+  color: #fff;
 }
 header ul {
   display: flex;
@@ -114,7 +126,8 @@ header a {
   width: 559px;
   max-width: 100%;
 }
-.hero .image_hero img, .hero .image_hero svg {
+.hero .image_hero img,
+.hero .image_hero svg {
   max-width: 650px;
   width: 100%;
   margin-bottom: -20px;
@@ -442,9 +455,14 @@ header a {
 .fale_conosco form input {
   font-size: 1.5rem;
   border: 0;
+  transition: 0.3s;
   border-bottom: 1px solid #dddddd;
   margin-bottom: 40px;
   height: 43px;
+  outline: none;
+}
+.fale_conosco form input:focus {
+  border-bottom: 1px solid #ffd570;
 }
 .fale_conosco form input::-moz-placeholder {
   color: #3c3c3c;
@@ -459,6 +477,12 @@ header a {
   border-radius: 100px;
   background-color: transparent;
   margin-top: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.fale_conosco input[type=submit]:hover {
+  background-color: #333;
+  color: #fff;
 }
 .fale_conosco textarea {
   padding: 16px;
@@ -826,12 +850,25 @@ header a {
 .button-primary {
   position: relative;
   overflow: hidden;
+  transition: 0.3s;
 }
-.button-primary span, .button-primary img {
+.button-primary span,
+.button-primary img {
   z-index: 2;
+}
+.button-primary svg {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s;
 }
 .button-primary:hover .layer {
   height: 54px;
+}
+.button-primary.two:hover {
+  color: #fff;
+}
+.button-primary.two:hover svg path {
+  fill: #fff;
 }
 .button-primary .layer {
   width: 100%;
@@ -840,9 +877,17 @@ header a {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: #FFC63E;
   z-index: 1;
   transition: 0.3s;
+}
+.button-primary .layer.hero {
+  background-color: #ffc63e;
+}
+.button-primary .layer {
+  background-color: #ffc63e;
+}
+.button-primary .layer.two {
+  background-color: #333;
 }
 
 #card_woman1 {
@@ -852,7 +897,7 @@ header a {
 
 #card_woman2 {
   position: relative;
-  animation: animationCard 2.5s infinite linear;
+  animation: animationCard 6s infinite linear;
 }
 
 @keyframes animationCard {
@@ -860,7 +905,7 @@ header a {
     transform: translateY(-10px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(12px);
   }
   100% {
     transform: translateY(-10px);
