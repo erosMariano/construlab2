@@ -485,7 +485,7 @@ header a {
   cursor: pointer;
 }
 .fale_conosco input[type=submit]:hover {
-  background-color: #333;
+  background-color: #fff;
   color: #fff;
 }
 .fale_conosco textarea {
@@ -853,7 +853,7 @@ header a {
     margin-bottom: 0;
   }
   .fale_conosco input[type=submit]:hover {
-    background-color: #333;
+    background-color: #fff;
     color: #333;
   }
   .fale_conosco a {
