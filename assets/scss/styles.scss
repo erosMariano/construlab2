@@ -685,8 +685,7 @@ header {
     }
     img {
       width: 22%;
-      height: fit-content;
-      height: fit-content;
+      height: auto;
     }
     h2 {
       max-width: 100%;
@@ -924,6 +923,9 @@ header {
   }
   .servicos picture img {
     height: 180px;
+  }
+  .principais_servicos .item_two{
+    border-radius: 20px;
   }
 }
 

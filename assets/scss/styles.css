@@ -632,9 +632,7 @@ header a {
   }
   .ods img {
     width: 22%;
-    height: -moz-fit-content;
-    height: fit-content;
-    height: fit-content;
+    height: auto;
   }
   .ods h2 {
     max-width: 100%;
@@ -850,6 +848,9 @@ header a {
   }
   .servicos picture img {
     height: 180px;
+  }
+  .principais_servicos .item_two {
+    border-radius: 20px;
   }
 }
 .button-primary {
