@@ -802,7 +802,7 @@ header {
   }
   .hero {
     .overlay {
-      display: none;
+      top: 16px;
     }
     svg {
       height: auto;
@@ -925,6 +925,11 @@ header {
     width: 124px;
     height: 40px;
     margin-bottom: 0;
+
+    &:hover {
+      background-color: #333;
+      color: #333;
+    }
   }
   .fale_conosco a {
     font-size: 1rem;

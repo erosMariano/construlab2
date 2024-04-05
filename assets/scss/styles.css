@@ -743,7 +743,7 @@ header a {
     padding-bottom: 40px;
   }
   .hero .overlay {
-    display: none;
+    top: 16px;
   }
   .hero svg {
     height: auto;
@@ -851,6 +851,10 @@ header a {
     width: 124px;
     height: 40px;
     margin-bottom: 0;
+  }
+  .fale_conosco input[type=submit]:hover {
+    background-color: #333;
+    color: #333;
   }
   .fale_conosco a {
     font-size: 1rem;
