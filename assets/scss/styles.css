@@ -758,7 +758,7 @@ header a {
     margin: 20px 0;
   }
   .area_atuacao {
-    padding: 80px 0;
+    padding: 60px 0;
   }
   .area_atuacao h2 {
     font-size: 2rem !important;
@@ -854,6 +854,13 @@ header a {
   }
   .servicos picture img {
     height: 180px;
+  }
+  .principais_servicos {
+    padding-top: 60px;
+    text-align: left;
+  }
+  .principais_servicos .tag p {
+    font-size: 22px !important;
   }
   .principais_servicos .item_two {
     border-radius: 20px;
