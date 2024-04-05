@@ -10,20 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/scss/style.min.css" />
-    <link rel="preload" href="./assets/images/webp/woman_hero.webp" as="image">
-    <link rel="preload" href="./assets/images/woman_hero.png" as="image">
+    <link rel="stylesheet" href="./assets/scss/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
       <div class="container desktop">
         <nav>
           <ul>
-            <li><a href="">A Construlab</a></li>
-            <li><a href="">Área de Atuação</a></li>
-            <li><a href="">Nossos Serviços</a></li>
-            <li><a href="">Fundadoras</a></li>
-            <li><a href="">Projetos</a></li>
+            <li><a href="#a_construlab">A Construlab</a></li>
+            <li><a href="#area_atuacao">Área de Atuação</a></li>
+            <li><a href="#principais_servicos">Nossos Serviços</a></li>
+            <li><a href="#quem_faz_construlab">Fundadoras</a></li>
+            <li><a href="#projeto_piloto">Projetos</a></li>
           </ul>
 
           <a href="" class="fale_conosco_button"
@@ -39,18 +38,18 @@
         <nav class="nav_mobile">
           <img src="./assets/images/close.svg" class="close" alt="" />
           <ul>
-            <li><a href="">A Construlab</a></li>
-            <li><a href="">Área de Atuação</a></li>
-            <li><a href="">Nossos Serviços</a></li>
-            <li><a href="">Fundadoras</a></li>
-            <li><a href="">Projetos</a></li>
+            <li><a href="#a_construlab">A Construlab</a></li>
+            <li><a href="#area_atuacao">Área de Atuação</a></li>
+            <li><a href="#principais_servicos">Nossos Serviços</a></li>
+            <li><a href="#quem_faz_construlab">Fundadoras</a></li>
+            <li><a href="#"projeto_piloto>Projetos</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="hero">
       <div class="container">
-        <div>
+        <div data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
           <h1>Desenvolvendo Habilidades em Construção Civil para Mulheres.</h1>
           <p>
             Capacitação e aplicação de conceitos básicos da construção civil e
@@ -61,75 +60,89 @@
             class="button-primary desktop"
             target="_blank"
             href="https://wa.me/5511959353574?text=Ol%C3%A1%2C+eu+gostaria+de+me+capacitar+por+meio+da+Construlab%21"
-            >Capacite-se <img src="./assets/images/arrow_rigth.svg" alt=""
+            ><span>Capacite-se</span>
+            <div class="layer"></div>
+            <img src="./assets/images/arrow_rigth.svg" alt=""
           /></a>
 
-          <img
-            class="arrow_bottom"
-            src="./assets/images/arrow_bottom.svg"
-            alt=""
-          />
-        </div>
-
-        <div class="image_hero">
-          <img src="" alt="" />
-          <picture>
-            <source
-              media="(max-width:1100px)"
-              srcset="
-                ./assets/images/webp/woman_hero.webp
-              "
-            />
+          <a href="#a_construlab">
             <img
-              src="./assets/images/webp/woman_hero_1.webp"
+              class="arrow_bottom"
+              src="./assets/images/arrow_bottom.svg"
               alt=""
             />
-          </picture>
+          </a>
+        </div>
+
+        <div
+          class="image_hero"
+          data-aos="fade-left"
+          data-aos-duration="700"
+          data-aos-once="true"
+        >
+          <img class="inject-me" src="./assets/images/woman.svg" />
         </div>
 
         <a
           class="button-primary mobile"
           target="_blank"
           href="https://wa.me/5511959353574?text=Ol%C3%A1%2C+eu+gostaria+de+me+capacitar+por+meio+da+Construlab%21"
-          >Capacite-se <img src="./assets/images/arrow_rigth.svg" alt=""
+          ><span>Capacite-se</span>
+          <div class="layer"></div>
+          <img src="./assets/images/arrow_rigth.svg" alt=""
         /></a>
       </div>
+      <div class="overlay"></div>
     </main>
 
-    <section class="a_construlab">
-      <div class="overlay"></div>
+    <section class="a_construlab" id="a_construlab">
       <div class="container">
-        <div class="image">
+        <div
+          class="image"
+          data-aos="fade-right"
+          data-aos-duration="700"
+          data-aos-once="true"
+        >
           <img
             src="./assets/images/webp/mulher-negra-abraçando-mulher-branca-com-certificado-na-mao.webp"
             alt=""
           />
-          <a href="" class="button-primary mobile"
-            >Saiba mais sobre o projeto
+          <a href="" class="button-primary mobile">
+            <span>Saiba mais sobre o projeto</span>
+            <div class="layer"></div>
             <img src="./assets/images/arrow_rigth.svg" alt=""
           /></a>
         </div>
-        <div>
+        
+        <div data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
           <h2>A Construlab</h2>
           <p>
             Um projeto de empoderamento da mulher, com capacitação e
             intermediação de reparos rápidos em elétrica, hidráulica, pintura e
             vistoria de obras, realizadas exclusivamente por mulheres.
           </p>
-          <a href="" class="button-primary desktop"
-            >Saiba mais sobre o projeto
+          <a href="#principais_servicos" class="button-primary desktop">
+            <span>Saiba mais sobre o projeto</span>
+            <div class="layer"></div>
             <img src="./assets/images/arrow_rigth.svg" alt=""
           /></a>
         </div>
       </div>
     </section>
 
-    <section class="area_atuacao">
+    <section class="area_atuacao" id="area_atuacao">
       <div class="container">
-        <h2>Nossa área de atuação</h2>
+        <h2 data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
+          Nossa área de atuação
+        </h2>
 
         <div class="flex">
-          <div class="texts">
+          <div
+            class="texts"
+            data-aos="fade-right"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
             <h3>Fortalecendo Comunidades:</h3>
             <p>
               Alianças Fundamentais para impulsionar o Progresso Local e
@@ -139,12 +152,21 @@
               target="_blank"
               href="https://wa.me/5511959353574?text=Ol%C3%A1%2C+eu+gostaria+de+me+capacitar+por+meio+da+Construlab%21"
               class="button-primary desktop"
-              >Capacite-se<img src="./assets/images/arrow_rigth.svg" alt=""
+            >
+              <span>Capacite-se</span>
+              <div class="layer"></div>
+              <img src="./assets/images/arrow_rigth.svg" alt=""
             /></a>
           </div>
 
           <div class="cards">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-once="true"
+              data-aos-delay="50"
+            >
               <img src="./assets/images/parceria_privadas.svg" alt="" />
               <div>
                 <h4>Parcerias Público-Privadas</h4>
@@ -156,7 +178,13 @@
               </div>
             </div>
 
-            <div class="card">
+            <div
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-once="true"
+              data-aos-delay="100"
+            >
               <img src="./assets/images/apoio_associacoes.svg" alt="" />
               <div>
                 <h4>Apoio das associações de bairro</h4>
@@ -168,7 +196,13 @@
               </div>
             </div>
 
-            <div class="card">
+            <div
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-once="true"
+              data-aos-delay="150"
+            >
               <img src="./assets/images/parceria_estrategia.svg" alt="" />
               <div>
                 <h4>Parecerias estratégicas</h4>
@@ -184,13 +218,16 @@
             target="_blank"
             href="https://wa.me/5511959353574?text=Ol%C3%A1%2C+eu+gostaria+de+me+capacitar+por+meio+da+Construlab%21"
             class="button-primary mobile"
-            >Capacite-se<img src="./assets/images/arrow_rigth.svg" alt=""
+            >
+            <span>Capacite-se</span>
+            <div class="layer"></div>
+            <img src="./assets/images/arrow_rigth.svg" alt=""
           /></a>
         </div>
       </div>
     </section>
 
-    <section class="ods">
+    <section class="ods" id="ods">
       <div class="container">
         <h2>Objetivos de Desenvolvimento Sustentável</h2>
 
@@ -203,7 +240,7 @@
       </div>
     </section>
 
-    <section class="principais_servicos">
+    <section class="principais_servicos" id="principais_servicos">
       <div class="container">
         <h2>Nossos Principais Serviços</h2>
         <div class="servicos">
@@ -211,7 +248,9 @@
             <picture>
               <source
                 media="(max-width:1100px)"
-                srcset="./assets/images/webp/principais_servicos_pintura_mobile.webp"
+                srcset="
+                  ./assets/images/webp/principais_servicos_pintura_mobile.webp
+                "
               />
               <img
                 src="./assets/images/webp/principais_servicos_pintura.png"
@@ -234,7 +273,9 @@
             <picture>
               <source
                 media="(max-width:1100px)"
-                srcset="./assets/images/webp/principais_servicos_eletrica_mobile.webp"
+                srcset="
+                  ./assets/images/webp/principais_servicos_eletrica_mobile.webp
+                "
               />
               <img
                 src="./assets/images/webp/principais_servicos_eletrica.png"
@@ -276,18 +317,28 @@
           target="_blank"
           href="https://wa.me/5511959353574?text=Ol%C3%A1%2C+eu+gostaria+de+fazer+um+or%C3%A7amento%21"
           class="button-primary"
-          >Quero fazer um orçamento<img
+          >
+          <span>Quero fazer um orçamento</span>
+          <div class="layer"></div>
+          <img
             src="./assets/images/arrow_rigth.svg"
             alt=""
         /></a>
       </div>
     </section>
 
-    <section class="quem_faz_construlab">
+    <section class="quem_faz_construlab" id="quem_faz_construlab">
       <div class="container">
-        <h2>Quem faz a Construlab acontecer</h2>
+        <h2 data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
+          Quem faz a Construlab acontecer
+        </h2>
         <div class="people">
-          <div class="image">
+          <div
+            class="image"
+            data-aos="fade-right"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
             <img
               src="./assets/images/webp/marta-de-jesus-da-silva-ikeda.webp"
               alt="Marta de Jesus da Silva Ikeda"
@@ -295,7 +346,12 @@
             <span>Marta de Jesus da Silva Ikeda</span>
           </div>
 
-          <div class="texts">
+          <div
+            class="texts"
+            data-aos="fade-left"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
             <p>
               <img src="./assets/images/streamline.svg" alt="" /> Web FullStack
               com experiência em Hackatons
@@ -317,7 +373,12 @@
         </div>
 
         <div class="people">
-          <div class="texts">
+          <div
+            class="texts"
+            data-aos="fade-right"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
             <p>
               <img src="./assets/images/streamline.svg" alt="" />Especialista em
               entrega, acompanhamento de etapas de execução, equipes e vistoria
@@ -336,15 +397,23 @@
             </p>
           </div>
 
-          <div class="image">
-            <img src="./assets/images/webp/karla-moura.webp" alt="Karla Moura" />
+          <div
+            class="image"
+            data-aos="fade-left"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
+            <img
+              src="./assets/images/webp/karla-moura.webp"
+              alt="Karla Moura"
+            />
             <span>Karla Moura</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="projeto_piloto">
+    <section class="projeto_piloto" id="projeto_piloto">
       <div class="container">
         <h2>Projeto Piloto e resultados</h2>
 
@@ -375,14 +444,9 @@
             <picture>
               <source
                 media="(max-width:1100px)"
-                srcset="
-                  ./assets/images/webp/projeto_piloto_mobile.webp
-                "
+                srcset="./assets/images/webp/projeto_piloto_mobile.webp"
               />
-              <img
-                src="./assets/images/projeto_piloto.png"
-                alt=""
-              />
+              <img src="./assets/images/projeto_piloto.png" alt="" />
             </picture>
           </div>
         </div>
@@ -390,14 +454,17 @@
           target="_blank"
           href="https://wa.me/5511959353574?text=Ol%C3%A1%2C+eu+gostaria+de+fazer+um+or%C3%A7amento%21"
           class="button-primary"
-          >Quero fazer um orçamento<img
+          >
+          <span>Quero fazer um orçamento</span>
+          <div class="layer"></div>
+          <img
             src="./assets/images/arrow_rigth.svg"
             alt=""
         /></a>
       </div>
     </section>
 
-    <section class="fale_conosco">
+    <section class="fale_conosco" id="fale_conosco">
       <div class="container">
         <div>
           <h2>Fale Conosco!</h2>
@@ -487,5 +554,18 @@
     </footer>
   </body>
 </html>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 <script src="./assets/js/menu.js"></script>
 <script src="./assets/js/form.js"></script>
+<script src="./assets/js/svg-injector.min.js"></script>
+<script>
+  // Elements to inject
+  var mySVGsToInject = document.querySelectorAll("img.inject-me");
+
+  // Do the injection
+  SVGInjector(mySVGsToInject);
+</script>

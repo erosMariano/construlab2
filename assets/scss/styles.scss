@@ -9,6 +9,13 @@ $text-secondary-color: #333333;
 body {
   overflow-x: hidden;
 }
+html{
+  scroll-behavior: smooth;
+}
+main, section{
+  overflow-x: hidden;
+}
+
 .flex {
   display: flex;
 }
@@ -72,6 +79,13 @@ header {
 }
 
 .hero {
+  .overlay{
+    height: 63px;
+    width: 100%;
+    background: rgba(255, 236, 193, .6);
+    top: -5px;
+    position: relative;
+  }
   .container {
     display: flex;
     align-items: center;
@@ -101,9 +115,10 @@ header {
   }
 
   .image_hero {
-    img {
+    img, svg{
       max-width: 650px;
       width: 100%;
+      margin-bottom: -20px;
     }
   }
 }
@@ -115,13 +130,6 @@ header {
   position: relative;
   overflow: hidden;
 
-  .layer {
-    width: 100%;
-    background-color: rgba(255, 229, 166, 0.6);
-    height: 100px;
-    position: absolute;
-    top: 0;
-  }
   .image {
     position: relative;
     left: -104px;
@@ -155,16 +163,6 @@ header {
 
   div {
     width: 100%;
-  }
-
-  .overlay{
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    background-color: rgba(255, 229, 166, .6);
-    transform: skewY(16deg);
-    top: 276px;
-    z-index: 1;
   }
 }
 
@@ -249,7 +247,7 @@ header {
 
   .button-primary {
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 60px;
   }
   h2 {
     font-size: 3.75rem;
@@ -314,7 +312,7 @@ header {
 }
 
 .quem_faz_construlab {
-  padding: 80px 0;
+  padding: 60px 0 80px 0;
   font-family: "Nunito", sans-serif;
   h2 {
     font-size: 3.75rem;
@@ -395,7 +393,7 @@ header {
   }
 
   .item {
-    width: 360px;
+    width: 460px;
     & + .item {
       margin-top: 28px;
     }
@@ -769,6 +767,12 @@ header {
     font-size: 1rem !important;
   }
   .hero {
+    .overlay{
+      display: none;
+    }
+    svg{
+      height: auto;
+    }
     padding-bottom: 40px;
     p {
       width: 100%;
@@ -776,9 +780,6 @@ header {
   }
 
  .a_construlab {
-    .overlay{
-      display: none;
-    }
     padding-top: 40px;
     p {
       margin: 20px 0;
@@ -888,5 +889,50 @@ header {
   }
   .servicos picture img {
     height: 180px;
+  }
+}
+
+
+// animações
+
+
+.button-primary {
+  position: relative;
+  overflow: hidden;
+  span, img{
+    z-index: 2;
+  }
+  &:hover{
+    .layer{
+      height: 54px;
+    }
+  }
+  .layer{
+    width: 100%;
+    height: 0px;
+    border-radius: 1000px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #FFC63E;
+    z-index: 1;
+    transition: .3s;
+  }
+}
+#card_woman1{
+  position: relative;
+  animation: animationCard 3s infinite linear;
+}
+#card_woman2{
+  position: relative;
+  animation: animationCard 2.5s infinite linear;
+}
+@keyframes animationCard{
+  0%{
+    transform: translateY(-10px);
+  }50%{
+    transform: translateY(20px);
+  }100%{
+    transform: translateY(-10px);
   }
 }
