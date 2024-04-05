@@ -451,6 +451,10 @@ header a {
   resize: none;
   margin-top: 10px;
   border-radius: 4px;
+  outline: none;
+}
+.fale_conosco form textarea:focus {
+  border: 1px solid #FFC63E;
 }
 .fale_conosco form input {
   font-size: 1.5rem;
@@ -629,6 +633,7 @@ header a {
   .ods img {
     width: 22%;
     height: -moz-fit-content;
+    height: fit-content;
     height: fit-content;
   }
   .ods h2 {

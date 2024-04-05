@@ -64,7 +64,7 @@ header {
       padding: 12px 20px;
       border-radius: 8px;
       transition: .3s;
-      
+
       &:hover{
         background-color: #FFC63E;
       }
@@ -488,6 +488,11 @@ header {
       resize: none;
       margin-top: 10px;
       border-radius: 4px;
+      outline: none;
+
+      &:focus{
+        border: 1px solid #FFC63E;
+      }
     }
     input {
       font-size: 1.5rem;
@@ -680,6 +685,7 @@ header {
     }
     img {
       width: 22%;
+      height: fit-content;
       height: fit-content;
     }
     h2 {
